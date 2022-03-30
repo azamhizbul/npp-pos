@@ -1567,6 +1567,7 @@ var DatatableBasic = (function() {
 					next: "<i class='fas fa-angle-right'>"
 				}
 			},
+			order: [[ 5, "desc" ]],
 		};
 
 		// Init the datatable
