@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
         <meta name="author" content="Creative Tim">
-        <title>Detail Pengajuan Pembayaran Internet Indihome Maret | POSNPP KCU/SPP</title>
+        <title>Pengajuan Detail Alat Tulis Kerja | POSNPP KCU/SPP</title>
         <!-- Favicon -->
         <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
         <!-- Fonts -->
@@ -51,11 +51,24 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="pengajuan.html">
-                                    <i class="ni ni-single-copy-04 text-primary"></i>
-                                    <span class="nav-link-text">Pengajuan</span>
+                                <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">
+                                  <i class="ni ni-books text-info"></i>
+                                  <span class="nav-link-text">Pengajuan</span>
                                 </a>
-                            </li>
+                                <div class="collapse" id="navbar-components">
+                                  <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                      <a href="pengajuan-pending.html" class="nav-link">Pengajuan Pending</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="pengajuan-diterima.html" class="nav-link">Pengajuan Diterima</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="pengajuan-ditolak.html" class="nav-link">Pengajuan Ditolak</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
                         </ul>
                         <!-- Divider -->
                         <hr class="my-3">
@@ -324,7 +337,7 @@
                                 <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                                     <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                                         <li class="breadcrumb-item"><a href="dashboard.html"><i class="fas fa-home"></i></a></li>
-                                        <li class="breadcrumb-item"><a href="pengajuan.html">Pengajuan</a></li>
+                                        <li class="breadcrumb-item"><a href="pengajuan-pending.html">Pengajuan</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">Detail</li>
                                     </ol>
                                 </nav>
@@ -341,7 +354,7 @@
                         <div class="card">
                             <!-- Card header -->
                             <div class="card-header">
-                                <h3 class="mb-0">Pembayaran Internet Indihome Maret</h3>
+                                <h3 class="mb-0">Alat Tulis Kantor</h3>
                             </div>
                         </div>
                         
@@ -349,7 +362,7 @@
                             <!-- Card header -->
                             <div class="card-header">
                                 <h3 class="mb-0">Daftar Item</h3>
-                                <p class="text-sm mb-0"> Berikut adalah daftar item dari permintaan Pembayaran Internet Indihome Maret. </p>
+                                <p class="text-sm mb-0"> Berikut adalah daftar item dari permintaan Alat Tulis Kantor. </p>
                             </div>
                             <div class="table-responsive py-4">
                                 <table class="table table-flush" id="datatable-basic">
@@ -373,17 +386,30 @@
                                     </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>Internet Indihome Maret</td>
+                                            <td>Pilot Stainless BPT-P (1 Pack)</td>
                                             <td>1</td>
-                                            <td>421.000</td>
-                                            <td>421.000</td>
+                                            <td>55.000</td>
+                                            <td>55.000</td>
+                                            <td>
+                                                <a href="#"><i class="ni ni-single-copy-04"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Notebook NB-716 A6 (1 Pack)</td>
+                                            <td>2</td>
+                                            <td>87.000</td>
+                                            <td>174.000</td>
                                             <td>
                                                 <a href="#"><i class="ni ni-single-copy-04"></i></a>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <h4 class="px-4 text-right">Grand Total : Rp. 421.000</h4>
+                                <h4 class="px-4 text-right">Grand Total : Rp. 229.000</h4>
+                                <div class="px-4">
+                                    <button class="btn btn-primary">Approve</button>
+                                    <button class="btn btn-warning">Reject</button>
+                                </div>
                             </div>
                         </div>
 
@@ -398,41 +424,22 @@
                                             <i class="ni ni-single-02"></i>
                                         </span>
                                         <div class="timeline-content">
-                                            <small class="text-muted font-weight-bold">Anda (KCU Wonodri 19238)<br/>18 Maret 2022 08:00 AM</small>
+                                            <small class="text-muted font-weight-bold">KCU Wonodri 19238<br/>21 Maret 2022 10:30 AM</small>
                                             <h5 class=" mt-3 mb-0">Pengajuan Kebutuhan</h5>
                                             <p class=" text-sm mt-1 mb-0"></p>
                                         </div>
                                     </div>
                                     <div class="timeline-block">
-                                        <span class="timeline-step badge-success">
+                                        <span class="timeline-step badge-info">
                                             <i class="ni ni-building"></i>
                                         </span>
                                         <div class="timeline-content">
-                                            <small class="text-muted font-weight-bold">Regional<br/>18 Maret 2022 10:30 AM</small>
-                                            <h5 class=" mt-3 mb-0">Permintaan Disetujui</h5>
-                                            <p class=" text-sm mt-1 mb-0">NPP 912839121 COVER NOTE</p>
+                                            <small class="text-muted font-weight-bold">Regional (Anda)<br/>22 Maret 2022 08:30 AM - Sekarang</small>
+                                            <h5 class=" mt-3 mb-0">Menunggu Persetujuan</h5>
+                                            <p class=" text-sm mt-1 mb-0">-</p>
                                         </div>
                                     </div>
-                                    <div class="timeline-block">
-                                        <span class="timeline-step badge-success">
-                                            <i class="ni ni-istanbul"></i>
-                                        </span>
-                                        <div class="timeline-content">
-                                            <small class="text-muted font-weight-bold">Pusat<br/>18 Maret 2022 14:21 AM</small>
-                                            <h5 class=" mt-3 mb-0">Selesai</h5>
-                                            <p class=" text-sm mt-1 mb-0">Proses Ordonatur: Selesai<br/>Proses Otorisator: Selesai<br/>Proses Viatur: Selesai</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-block">
-                                        <span class="timeline-step badge-success">
-                                            <i class="ni ni-single-02"></i>
-                                        </span>
-                                        <div class="timeline-content">
-                                            <small class="text-muted font-weight-bold">Anda (KCU Wonodri 19238)<br/>19 Maret 2022 08:00 AM</small>
-                                            <h5 class=" mt-3 mb-0">Diterima</h5>
-                                            <p class=" text-sm mt-1 mb-0"></p>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -444,7 +451,7 @@
                         <div class="modal-content">
                             <form id="pengajuanAdd" class="needs-validation">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Ajukan Permintaan</h5>
+                                    <h5 class="modal-title">Form Pengajuan ke NDE</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -458,71 +465,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-12 form_sec_outer_task border">
-                                                <div class="row">
-                                                    <div class="col-md-12 bg-light p-2 mb-3">
-                                                        <div class="row">
-                                                                    <div class="col-md-6">
-                                                                        <span class="frm_section_n float-left">Daftar Item</span>
-                                                                    </div>
-                                                                    <div class="col-md-6 text-right">
-                                                                        <span class="">Grand Total: -</span>
-                                                                    </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label>Item</label>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label>Lampiran</label>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <label>Qty</label>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label>Total</label>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label>Subtotal</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 p-0">
-                                                    <div class="col-md-12 form_field_outer p-0">
-                                                        <div class="row form_field_outer_row">
-                                                            <div class="form-group col-md-4">
-                                                                <input type="text" class="form-control w_90" name="item[]" id="item_1" placeholder="Item" />
-                                                            </div>
-                                                            <div class="form-group col-md-2">
-                                                                <input type="file" class="form-control w_90" name="file[]" id="file_1" placeholder="file" />
-                                                            </div>
-                                                            <div class="form-group col-md-1">
-                                                                <input type="number" min="1" class="form-control w_90" name="qty[]" id="qty_1" placeholder="qty" />
-                                                            </div>
-                                                            <div class="form-group col-md-2">
-                                                                <input type="text" class="form-control w_90" name="total[]" id="total_1" placeholder="Total" />
-                                                            </div>
-                                                            <div class="form-group col-md-2">
-                                                                <input type="text" class="form-control w_90" name="subtotal[]" id="subtotal_1" placeholder="Subtotal" readonly />
-                                                            </div>
-                                                            <div class="form-group col-md-1 add_del_btn_outer">
-                                                                <button class="btn btn-danger remove_node_btn_frm_field" disabled>
-                                                                    <i class="fas fa-trash-alt"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row ml-0 bg-light mt-3 border py-3">
-                                                <div class="col-md-12">
-                                                    <a href="#" class="btn btn-outline-lite py-0 add_new_frm_field_btn" onclick="add_item();">
-                                                        <i class="fas fa-plus add_icon"></i> Tambah item </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="modal-footer">
                                     <button id="hotspotuserAdd-submit" type="button" class="btn btn-primary" onclick="">Ajukan</button>
@@ -534,39 +477,7 @@
                 </div>
 
                 <script type="text/javascript">
-                    function add_item(){
-                        var index = $(".form_field_outer").find(".form_field_outer_row").length + 1; $(".form_field_outer").append(`
-                        <div class="row form_field_outer_row">
-                            <div class="form-group col-md-4">
-                                <input type="text" class="form-control w_90" name="item[]" id="item_${index}" placeholder="Item" />
-                            </div>
-                            <div class="form-group col-md-2">
-                                <input type="file" class="form-control w_90" name="file[]" id="file_${index}" placeholder="file" />
-                            </div>
-                            <div class="form-group col-md-1">
-                                <input type="number" min="1" class="form-control w_90" name="qty[]" id="qty_${index}" placeholder="qty" />
-                            </div>
-                            <div class="form-group col-md-2">
-                                <input type="text" class="form-control w_90" name="total[]" id="total_${index}" placeholder="Total" />
-                            </div>
-                            <div class="form-group col-md-2">
-                                <input type="text" class="form-control w_90" name="subtotal[]" id="subtotal_${index}" placeholder="Subtotal" readonly />
-                            </div>
-                            <div class="form-group col-md-1 add_del_btn_outer">
-                                <a href="#" class="btn btn-danger remove_node_btn_frm_field" disabled>
-                                    <i class="fas fa-trash-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        `); $(".form_field_outer").find(".remove_node_btn_frm_field:not(:first)").prop("disabled", false); $(".form_field_outer").find(".remove_node_btn_frm_field").first().prop("disabled", true);
-                    }
-                    
-                    $(document).ready(function () {
-                        $("body").on("click", ".remove_node_btn_frm_field", function () {
-                            $(this).closest(".form_field_outer_row").remove();
-                            console.log("success");
-                        });
-                    });
+
                 </script>
 
                 <!-- Footer -->

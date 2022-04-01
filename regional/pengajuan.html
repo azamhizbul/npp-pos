@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
         <meta name="author" content="Creative Tim">
-        <title>Detail Pengajuan Pembayaran Internet Indihome Maret | POSNPP KCU/SPP</title>
+        <title>Pengajuan Kebutuhan | POSNPP KCU/SPP</title>
         <!-- Favicon -->
         <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
         <!-- Fonts -->
@@ -51,11 +51,24 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="pengajuan.html">
-                                    <i class="ni ni-single-copy-04 text-primary"></i>
-                                    <span class="nav-link-text">Pengajuan</span>
+                                <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">
+                                  <i class="ni ni-books text-info"></i>
+                                  <span class="nav-link-text">Pengajuan</span>
                                 </a>
-                            </li>
+                                <div class="collapse" id="navbar-components">
+                                  <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                      <a href="pengajuan-pending.html" class="nav-link">Pengajuan Pending</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="pengajuan-diterima.html" class="nav-link">Pengajuan Diterima</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="pengajuan-ditolak.html" class="nav-link">Pengajuan Ditolak</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
                         </ul>
                         <!-- Divider -->
                         <hr class="my-3">
@@ -323,11 +336,17 @@
                                 <h6 class="h2 text-white d-inline-block mb-0">Pengajuan</h6>
                                 <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                                     <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                                        <li class="breadcrumb-item"><a href="dashboard.html"><i class="fas fa-home"></i></a></li>
-                                        <li class="breadcrumb-item"><a href="pengajuan.html">Pengajuan</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Detail</li>
+                                        <li class="breadcrumb-item">
+                                            <a href="#">
+                                                <i class="fas fa-home"></i>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">Pengajuan</li>
                                     </ol>
                                 </nav>
+                            </div>
+                            <div class="col-lg-6 col-5 text-right">
+                                <a href="#" class="btn btn-sm btn-neutral" data-toggle="modal" data-target="#pengajuan-add">Tambah Pengajuan</a>
                             </div>
                         </div>
                     </div>
@@ -341,102 +360,124 @@
                         <div class="card">
                             <!-- Card header -->
                             <div class="card-header">
-                                <h3 class="mb-0">Pembayaran Internet Indihome Maret</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <!-- Card header -->
-                            <div class="card-header">
-                                <h3 class="mb-0">Daftar Item</h3>
-                                <p class="text-sm mb-0"> Berikut adalah daftar item dari permintaan Pembayaran Internet Indihome Maret. </p>
+                                <h3 class="mb-0">Daftar Pengajuan</h3>
+                                <p class="text-sm mb-0"> Berikut adalah daftar pengajuan yang anda minta. </p>
                             </div>
                             <div class="table-responsive py-4">
                                 <table class="table table-flush" id="datatable-basic">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th>Item</th>
-                                            <th>Qty</th>
-                                            <th>Total</th>
-                                            <th>Subtotal</th>
-                                            <th>Lampiran</th>
+                                            <th>Permintaan</th>
+                                            <th>Nilai</th>
+                                            <th>State</th>
+                                            <th>Status</th>
+                                            <th>Progress Overall</th>
+                                            <th>Diajukan</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Item</th>
-                                            <th>Qty</th>
-                                            <th>Total</th>
-                                            <th>Subtotal</th>
-                                            <th>Lampiran</th>
+                                            <th>Permintaan</th>
+                                            <th>Nilai</th>
+                                            <th>State</th>
+                                            <th>Status</th>
+                                            <th>Progress Overall</th>
+                                            <th>Diajukan</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>Internet Indihome Maret</td>
-                                            <td>1</td>
-                                            <td>421.000</td>
-                                            <td>421.000</td>
+                                            <td><a href="pengajuan-detail-alat-tulis-kerja.html" style="color: #525f7f">Alat Tulis Kantor</a></td>
+                                            <td>229.000</td>
+                                            <td>Proses regional</td>
                                             <td>
-                                                <a href="#"><i class="ni ni-single-copy-04"></i></a>
+                                                <span class="badge badge-dot mr-4">
+                                                    <i class="bg-default"></i>
+                                                    <span class="status">menunggu</span>
+                                                </span>
                                             </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="completion mr-2">5%</span>
+                                                    <div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>21 Maret 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="pengajuan-detail-pembayaran-internet-indihome-maret.html" style="color: #525f7f">Pembayaran Internet Indihome Maret</a></td>
+                                            <td>421.000</td>
+                                            <td>Konfirmasi penerimaan</td>
+                                            <td>
+                                                <span class="badge badge-dot mr-4">
+                                                    <i class="bg-success"></i>
+                                                    <span class="status">diterima</span>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="completion mr-2">100%</span>
+                                                    <div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>18 Maret 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Penggantian Perangkat Mikrotik</td>
+                                            <td>1.678.000</td>
+                                            <td>Proses ordonatur</td>
+                                            <td>
+                                                <span class="badge badge-dot mr-4">
+                                                    <i class="bg-info"></i>
+                                                    <span class="status">menunggu</span>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="completion mr-2">85%</span>
+                                                    <div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>01 Januari 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kertas Thermal Printer 58mm</td>
+                                            <td>1.050.000</td>
+                                            <td>Proses viatur</td>
+                                            <td>
+                                                <span class="badge badge-dot mr-4">
+                                                    <i class="bg-info"></i>
+                                                    <span class="status">menunggu</span>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="completion mr-2">85%</span>
+                                                    <div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>01 Januari 2022</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <h4 class="px-4 text-right">Grand Total : Rp. 421.000</h4>
                             </div>
                         </div>
-
-                        <div class="card">
-                            <div class="card-header bg-transparent">
-                                <h3 class="mb-0">Timeline</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="timeline timeline-one-side" data-timeline-content="axis" data-timeline-axis-style="dashed">
-                                    <div class="timeline-block">
-                                        <span class="timeline-step badge-success">
-                                            <i class="ni ni-single-02"></i>
-                                        </span>
-                                        <div class="timeline-content">
-                                            <small class="text-muted font-weight-bold">Anda (KCU Wonodri 19238)<br/>18 Maret 2022 08:00 AM</small>
-                                            <h5 class=" mt-3 mb-0">Pengajuan Kebutuhan</h5>
-                                            <p class=" text-sm mt-1 mb-0"></p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-block">
-                                        <span class="timeline-step badge-success">
-                                            <i class="ni ni-building"></i>
-                                        </span>
-                                        <div class="timeline-content">
-                                            <small class="text-muted font-weight-bold">Regional<br/>18 Maret 2022 10:30 AM</small>
-                                            <h5 class=" mt-3 mb-0">Permintaan Disetujui</h5>
-                                            <p class=" text-sm mt-1 mb-0">NPP 912839121 COVER NOTE</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-block">
-                                        <span class="timeline-step badge-success">
-                                            <i class="ni ni-istanbul"></i>
-                                        </span>
-                                        <div class="timeline-content">
-                                            <small class="text-muted font-weight-bold">Pusat<br/>18 Maret 2022 14:21 AM</small>
-                                            <h5 class=" mt-3 mb-0">Selesai</h5>
-                                            <p class=" text-sm mt-1 mb-0">Proses Ordonatur: Selesai<br/>Proses Otorisator: Selesai<br/>Proses Viatur: Selesai</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-block">
-                                        <span class="timeline-step badge-success">
-                                            <i class="ni ni-single-02"></i>
-                                        </span>
-                                        <div class="timeline-content">
-                                            <small class="text-muted font-weight-bold">Anda (KCU Wonodri 19238)<br/>19 Maret 2022 08:00 AM</small>
-                                            <h5 class=" mt-3 mb-0">Diterima</h5>
-                                            <p class=" text-sm mt-1 mb-0"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
                 <div id="pengajuan-add" class="modal" tabindex="-1" role="dialog">
